@@ -27,12 +27,13 @@
 <form class="upload-form" id="upload-select-image" method="post"
       enctype="multipart/form-data"
       autocomplete="off">
+
   <div class="upload-image">
     <input type="file" id="upload-file" class="upload-input" name="filename" required>
     <label class="upload-file upload-control" for="upload-file"></label>
   </div>
 
-  <div class="upload-overlay">
+  <div class="upload-overlay hidden">
     <div class="upload-effect">
       <fieldset class="upload-resize-controls">
         <button type="button"
@@ -114,11 +115,7 @@
 <footer class="footer container">
   <div class="center-wrapper">
     <section class="footer-logo">
-      Сделано в <a tabindex="1" href="http://htmlacademy.ru" class="footer-logo-link"><img src="img/ha-logo.png"
-                                                                                           class="footer-logo-image"
-                                                                                           width="130"
-                                                                                           alt="HTML Academy"/>HTML
-      Academy</a> &copy; 2017
+      Сделано в <a tabindex="1" href="http://htmlacademy.ru" class="footer-logo-link"><img src="img/ha-logo.png" class="footer-logo-image" width="130" alt="HTML Academy"/>HTML Academy</a> &copy; 2017
     </section>
     <nav class="footer-social">
       <a tabindex="1" href="https://twitter.com/htmlacademy_ru" alt="twitter"
@@ -146,8 +143,8 @@
 </div>
 
 <template id="picture-template" style="display: none">
-  <div href="" class="picture">
-    <img src="" width="182" height="182" tabindex="0">
+  <div href="" class="picture" tabindex="0">
+    <img src="" width="182" height="182">
     <span class="picture-stats">
       <span class="picture-stat picture-comments"></span>
       <span class="picture-stat picture-likes"></span>

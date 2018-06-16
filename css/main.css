@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+body.is-popup {
+  overflow: hidden;
+}
+
 html {
   min-height: 100%;
 
@@ -202,7 +206,7 @@ body {
 
   position: absolute;
   top: 0;
-  left: 100%;
+  right: 30px;
   margin-left: 10px;
 
   border: 0;
