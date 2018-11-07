@@ -227,7 +227,7 @@ uploadResizeControls.addEventListener('click', function(evt) {
 // 4.6
 
 var checkHashtag = function(el) {
-  var hashtagValueArray = el.value.split(' ')
+  var hashtagValueArray = el.value.replace(/\s+/g, ' ').split(' ');
 
   hashtagValueArray.forEach( function(el) {
     if ( el[0] !== '#' ) {
@@ -235,5 +235,5 @@ var checkHashtag = function(el) {
     }
   })
 
-
+  console.log(hashtagValueArray)
 }
