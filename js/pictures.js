@@ -235,5 +235,9 @@ var checkHashtag = function(el) {
     }
   })
 
+  if ( hashtagValueArray.length > 5 ) {
+    console.log('Вы можете ввести максимум 5-ть хэш-тегов!')
+  }
+
   console.log(hashtagValueArray)
 }
