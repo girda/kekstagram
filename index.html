@@ -30,7 +30,7 @@
 
   <div class="upload-image">
     <input type="file" id="upload-file" class="upload-input" name="filename" required>
-    <label class="upload-file upload-control" for="upload-file"></label>
+    <label class="upload-file upload-control" for="upload-file" tabindex="0"></label>
   </div>
 
   <div class="upload-overlay hidden">
@@ -39,7 +39,7 @@
         <button type="button"
                 class="upload-resize-control upload-resize-controls-button upload-resize-controls-button-dec">–
         </button><!--
-        --><input type="text" class="upload-resize-control upload-resize-controls-value" value="55%" readonly title="Image Scale" name="scale"/><!--
+        --><input type="text" class="upload-resize-control upload-resize-controls-value" value="100%" readonly title="Image Scale" name="scale"/><!--
         --><button type="button"
                 class="upload-resize-control upload-resize-controls-button upload-resize-controls-button-inc">+
         </button>
@@ -143,7 +143,7 @@
 </div>
 
 <template id="picture-template" style="display: none">
-  <div href="" class="picture" tabindex="0">
+  <div class="picture" tabindex="0">
     <img src="" width="182" height="182">
     <span class="picture-stats">
       <span class="picture-stat picture-comments"></span>
