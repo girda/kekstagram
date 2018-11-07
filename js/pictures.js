@@ -202,14 +202,15 @@ uploadResizeControls.addEventListener('click', function(evt) {
   var currentValue = uploadResizeValue.value.replace(/\D+/g,"");
   var MAX_VALUE = 100;
   var MIN_VALUE = 25;
+  var step = 25;
 
   if ( evt.target.classList.contains(classBtn + 'inc') ) {
       if ( currentValue < MAX_VALUE ) {
-        currentValue = +currentValue + 25
+        currentValue = +currentValue + step
       }
   } else if ( evt.target.classList.contains(classBtn + 'dec') ) {
     if ( currentValue > MIN_VALUE ) {
-        currentValue = +currentValue - 25
+        currentValue = +currentValue - step
       }
   }
 
@@ -226,7 +227,13 @@ uploadResizeControls.addEventListener('click', function(evt) {
 // 4.6
 
 var checkHashtag = function(el) {
-  console.log(el.value)
+  var hashtagValueArray = el.value.split(' ')
+
+  hashtagValueArray.forEach( function(el) {
+    if ( el[0] !== '#' ) {
+      console.log('хэш-тег должен начинаться с хэша(#)!')
+    }
+  })
 
 
 }
